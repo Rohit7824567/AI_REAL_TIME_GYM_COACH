@@ -1,0 +1,818 @@
+/* =========================================================
+   AI REAL-TIME GYM COACH
+   PREMIUM DARK FITNESS THEME
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL THEME
+========================================================= */
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(0, 255, 170, 0.08),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(80, 120, 255, 0.08),
+            transparent 30%
+        ),
+        #070A0F;
+
+    color: #F5F7FA;
+}
+
+
+/* Main app content */
+
+.main {
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+[data-testid="stSidebar"] {
+    background:
+        linear-gradient(
+            180deg,
+            #0D121A 0%,
+            #090D13 100%
+        ) !important;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+/* Sidebar content */
+
+[data-testid="stSidebar"] > div:first-child {
+    padding-top: 2rem;
+}
+
+
+/* Sidebar title */
+
+[data-testid="stSidebar"] h1 {
+    font-size: 1.55rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+}
+
+
+/* Sidebar divider */
+
+[data-testid="stSidebar"] hr {
+    border-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.block-container,
+.block-container * {
+    font-family: "AdobeClean", sans-serif !important;
+}
+
+
+/* Main headings */
+
+h1 {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -1px;
+    color: #FFFFFF !important;
+}
+
+
+h2 {
+    font-size: 1.7rem !important;
+    font-weight: 650 !important;
+    color: #FFFFFF !important;
+}
+
+
+h3 {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #E9EDF2 !important;
+}
+
+
+/* Paragraph */
+
+p {
+    color: #AAB3C0;
+}
+
+
+/* Strong */
+
+strong {
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.block-container {
+    padding: 3rem 3rem 4rem 3rem !important;
+    max-width: 1100px !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button,
+.stButton button,
+.stDownloadButton button,
+[data-testid="stButton"] button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #B8FF00,
+            #74E600
+        ) !important;
+
+    color: #071006 !important;
+
+    border: none !important;
+
+    border-radius: 10px !important;
+
+    font-family: "AdobeClean", sans-serif !important;
+
+    font-weight: 700 !important;
+
+    min-height: 44px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+/* Button hover */
+
+button:hover,
+.stButton button:hover,
+.stDownloadButton button:hover {
+
+    transform: translateY(-2px);
+
+    filter: brightness(1.08);
+
+    box-shadow:
+        0 8px 25px rgba(150, 255, 0, 0.20);
+}
+
+
+/* Button active */
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+[data-testid="stBaseButton-secondary"] {
+
+    background: #151B24 !important;
+
+    color: #E8EDF3 !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+input,
+textarea {
+
+    background: #111720 !important;
+
+    color: #FFFFFF !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+    border-radius: 10px !important;
+
+    font-family: "AdobeClean", sans-serif !important;
+
+    transition:
+        border 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Input focus */
+
+input:focus,
+textarea:focus {
+
+    border-color: #B8FF00 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(184, 255, 0, 0.10) !important;
+}
+
+
+/* Number input */
+
+[data-testid="stNumberInputContainer"] {
+
+    background: #111720 !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* Number input buttons */
+
+[data-testid="stNumberInputContainer"] button {
+
+    background: #181F29 !important;
+
+    color: #B8FF00 !important;
+
+    border-radius: 0 !important;
+
+    min-height: 35px;
+}
+
+
+/* =========================================================
+   SELECT BOX
+========================================================= */
+
+[data-baseweb="select"] > div {
+
+    background: #111720 !important;
+
+    color: #FFFFFF !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+    border-radius: 10px !important;
+
+    min-height: 42px;
+}
+
+
+/* Select text */
+
+[data-baseweb="select"] span {
+
+    color: #F5F7FA !important;
+}
+
+
+/* Dropdown */
+
+[data-baseweb="popover"],
+[data-baseweb="menu"] {
+
+    background: #111720 !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* Dropdown items */
+
+[data-baseweb="menu"] li {
+
+    color: #E7ECF2 !important;
+
+    background: transparent !important;
+}
+
+
+/* Dropdown hover */
+
+[data-baseweb="menu"] li:hover {
+
+    background: rgba(184, 255, 0, 0.08) !important;
+
+    color: #B8FF00 !important;
+}
+
+
+/* =========================================================
+   METRIC CARDS
+========================================================= */
+
+[data-testid="stMetric"] {
+
+    background:
+        linear-gradient(
+            145deg,
+            #121923,
+            #0D131B
+        ) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    padding: 1.25rem !important;
+
+    border-radius: 14px !important;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        border 0.2s ease;
+}
+
+
+/* Metric hover */
+
+[data-testid="stMetric"]:hover {
+
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(184, 255, 0, 0.25);
+}
+
+
+/* Metric value */
+
+[data-testid="stMetricValue"] {
+
+    font-size: 2rem !important;
+
+    font-weight: 700 !important;
+
+    color: #B8FF00 !important;
+
+    letter-spacing: -1px;
+}
+
+
+/* Metric label */
+
+[data-testid="stMetricLabel"] {
+
+    color: #8994A3 !important;
+
+    font-size: 0.85rem !important;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+/* Metric delta */
+
+[data-testid="stMetricDelta"] {
+
+    color: #B8FF00 !important;
+}
+
+
+/* =========================================================
+   INFO / SUCCESS / WARNING CARDS
+========================================================= */
+
+[data-testid="stAlert"] {
+
+    background: #111820 !important;
+
+    border-radius: 12px !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+
+    color: #E9EEF4 !important;
+}
+
+
+/* Success */
+
+[data-testid="stAlert"][data-baseweb="notification"] {
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.stForm {
+
+    margin-top: 1.5rem !important;
+
+    padding: 1.5rem !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111821,
+            #0C1118
+        ) !important;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07) !important;
+
+    border-radius: 14px !important;
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   CARDS / CONTAINERS
+========================================================= */
+
+.stContainer,
+.stExpander,
+.stTabs,
+.stPopover,
+.stStatusContainer,
+.stTable,
+.stDataFrame {
+
+    border-radius: 14px !important;
+
+    font-family: "AdobeClean", sans-serif !important;
+}
+
+
+/* =========================================================
+   EXPANDER
+========================================================= */
+
+[data-testid="stExpander"] {
+
+    background: #10161F !important;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07) !important;
+
+    border-radius: 12px !important;
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+button[data-baseweb="tab"] {
+
+    background: transparent !important;
+
+    color: #8994A3 !important;
+
+    border-radius: 8px !important;
+
+    min-height: 40px;
+}
+
+
+button[data-baseweb="tab"][aria-selected="true"] {
+
+    color: #B8FF00 !important;
+
+    background:
+        rgba(184, 255, 0, 0.07) !important;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.stTable {
+
+    background: #0F151D !important;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.06) !important;
+
+    border-radius: 12px !important;
+
+    overflow: hidden;
+}
+
+
+/* Table header */
+
+.stTable thead tr th {
+
+    background: #171E28 !important;
+
+    color: #B8FF00 !important;
+
+    font-weight: 700 !important;
+
+    text-transform: uppercase;
+
+    font-size: 0.78rem;
+}
+
+
+/* Table rows */
+
+.stTable tbody tr {
+
+    background: #0F151D !important;
+
+    color: #DCE2E8 !important;
+}
+
+
+/* Table hover */
+
+.stTable tbody tr:hover {
+
+    background:
+        rgba(184, 255, 0, 0.04) !important;
+}
+
+
+/* =========================================================
+   DATAFRAME
+========================================================= */
+
+.stDataFrame,
+.stDataFrame div,
+.stDataFrameGlideDataEditor {
+
+    border-radius: 10px !important;
+
+    font-family: "AdobeClean", sans-serif !important;
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+[data-testid="stSlider"] {
+
+    padding-top: 8px;
+}
+
+
+/* Slider track */
+
+[data-baseweb="slider"] div[role="slider"] {
+
+    background: #B8FF00 !important;
+
+    border-color: #B8FF00 !important;
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+[data-testid="stCheckbox"] label {
+
+    color: #DDE3EA !important;
+}
+
+
+/* =========================================================
+   RADIO
+========================================================= */
+
+[data-testid="stRadio"] label {
+
+    color: #DDE3EA !important;
+}
+
+
+/* =========================================================
+   SIDEBAR WORKOUT PLAN
+========================================================= */
+
+[data-testid="stSidebar"] [data-testid="stSubheader"] {
+
+    color: #B8FF00 !important;
+
+    font-weight: 700 !important;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SIDEBAR INFO
+========================================================= */
+
+[data-testid="stSidebar"] [data-testid="stAlert"] {
+
+    background: #151C25 !important;
+
+    border:
+        1px solid rgba(184, 255, 0, 0.12) !important;
+}
+
+
+/* =========================================================
+   DIVIDERS
+========================================================= */
+
+hr {
+
+    border: none !important;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.07) !important;
+
+    margin: 1.5rem 0 !important;
+}
+
+
+/* =========================================================
+   COACH FEEDBACK
+========================================================= */
+
+[data-testid="stAlert"] p {
+
+    color: #E8EDF2 !important;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   WORKOUT START SCREEN
+========================================================= */
+
+.workout-empty-state {
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(184, 255, 0, 0.05),
+            transparent 65%
+        );
+
+    border:
+        1px dashed rgba(184, 255, 0, 0.25);
+
+    border-radius: 18px;
+
+    padding: 55px 30px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 7px;
+
+    height: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+
+    background: #080B10;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: #29313C;
+
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #B8FF00;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+
+    color: #B8FF00 !important;
+
+    text-decoration: none !important;
+}
+
+
+a:hover {
+
+    text-decoration: underline !important;
+}
+
+
+/* =========================================================
+   CAPTIONS
+========================================================= */
+
+[data-testid="stCaptionContainer"] {
+
+    color: #778292 !important;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   FILE UPLOADER
+========================================================= */
+
+[data-testid="stFileUploader"] {
+
+    background: #10161F !important;
+
+    border-radius: 12px !important;
+}
+
+
+/* =========================================================
+   CAMERA / WEBRTC AREA
+========================================================= */
+
+[data-testid="stVideo"] {
+
+    border-radius: 14px !important;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(184, 255, 0, 0.15);
+}
+
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+[data-testid="stSpinner"] {
+
+    color: #B8FF00 !important;
+}
+
+
+/* =========================================================
+   MOBILE / SMALL SCREEN
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .block-container {
+
+        padding:
+            1.5rem 1rem 3rem 1rem !important;
+    }
+
+    h1 {
+
+        font-size: 2rem !important;
+    }
+
+    h2 {
+
+        font-size: 1.45rem !important;
+    }
+
+    [data-testid="stMetricValue"] {
+
+        font-size: 1.5rem !important;
+    }
+}
